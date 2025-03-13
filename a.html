@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="i1"></p>
+    <p id="i2"></p>
+    <p id="i3"></p>
+    <p id="i4"></p>
+    <p id="i5"></p>
+    <script>
+        var x;//undefined
+        document.getElementById("i1").innerHTML=x;
+        x=null;
+        document.getElementById("i2").innerHTML = x+1;
+
+        var i=1;
+while (i<=20){
+            document.write(i+"hello<br>")
+            i=i+1;
+        }
+        var n=20*-20;
+if(n<0)
+            document.getElementById("i3").innerHTML=n+"is positive number";
+else if (n<0)
+            document.getElementById("i3").innerHTML = n + "is negeticenumber"; 
+else 
+            document.getElementById("i3").innerHTML = n + "is zero";
+function f1(){
+    var x=30;
+    if(x>10){
+        x=x+2
+       var y=x*2;
+
+    }
+    document.getElementById("i4").innerHTML = y;
+}
+f1();
+
+
+
+        
+
+    </script>
+</body>
+</html>
